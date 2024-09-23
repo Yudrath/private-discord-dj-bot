@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.discordbot</groupId>
+    <artifactId>discord-dj-bot</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>22</maven.compiler.source>
+        <maven.compiler.target>22</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <javafx.version>22.0.2</javafx.version>
+        <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>jitpack</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>arbjergDev-releases</id>
+            <name>Lavalink Repository</name>
+            <url>https://maven.lavalink.dev/releases</url>
+        </repository>
+        <repository>
+            <id>TopiWTF-releases</id>
+            <name>Topis Maven Repo</name>
+            <url>https://maven.topi.wtf/releases</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.topi314.lavasrc</groupId>
+            <artifactId>lavasrc</artifactId>
+            <version>4.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.5.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.dv8tion</groupId>
+            <artifactId>JDA</artifactId>
+            <version>5.0.2</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.github.walkyst</groupId>-->
+<!--            <artifactId>lavaplayer-fork</artifactId>-->
+<!--            <version>1.4.3</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>dev.arbjerg</groupId>
+            <artifactId>lavaplayer</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>dev.lavalink.youtube</groupId>
+            <artifactId>common</artifactId>
+            <version>1.7.1</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.google.code.gson</groupId>-->
+<!--            <artifactId>gson</artifactId>-->
+<!--            <version>2.10.1</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.java-websocket</groupId>-->
+<!--            <artifactId>Java-WebSocket</artifactId>-->
+<!--            <version>1.5.7</version>-->
+<!--        </dependency>-->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>${javafx.maven.plugin.version}</version>
+                <configuration>
+                    <mainClass>com.discordbot.userinterface.UserInterface</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
