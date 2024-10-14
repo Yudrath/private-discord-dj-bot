@@ -99,7 +99,10 @@ public class Play implements ICommand {
             URI uri = new URL(url).toURI();
             String domain = uri.getHost();
 
+            System.out.println(domain);
+
             if (domain.equals("soundcloud.com")
+                    || domain.equals("youtu.be")
                     || domain.equals("www.youtube.com")
                     || domain.equals("open.spotify.com")) {
 
