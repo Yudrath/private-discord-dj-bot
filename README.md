@@ -33,3 +33,69 @@ If you plan on using a separate Discord account, you must create it and login in
 8. Go to the Discord server where the bots are added, get the server's ID, open the project in your IDE and assign the copied ID to GUILD_ID in the HelperBot class. After pasting it, attach an "L" to the ID value (000000000**L**).
 9. Repeat step 8, this time copying the DJ bot's ID and assigning it to DJ_ID in the same class.
 10. You can finally build the project and use it.
+
+# Commands
+<table>
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>/play</td>
+    <td>You can feed a URL of a track/playlist directly to the /play command, or alternatively, you can use a search query to find a desired song. Only Spotify, Soundcloud and YouTube links are allowed.</td>
+  </tr>
+  <tr>
+    <td>/clear</td>
+    <td>Empties the queue.</td>
+  </tr>
+  <tr>
+    <td>/join</td>
+    <td>Joins the bot to your audio channel. If a track was playing when the bot left, it resumes playing it.</td>
+  </tr>
+  <tr>
+    <td>/leave</td>
+    <td>Makes the bot leave its current audio channel. It also pauses the currently playing track, if one is playing.</td>
+  </tr>
+  <tr>
+    <td>/loop</td>
+    <td>Sets loop on or off.</td>
+  </tr>
+  <tr>
+    <td>/nowplaying</td>
+    <td>Returns a message with information about the currently playing track.</td>
+  </tr>
+  <tr>
+    <td>/pause</td>
+    <td>Pauses the player.</td>
+  </tr>
+  <tr>
+    <td>/unpause</td>
+    <td>Unpauses the player.</td>
+  </tr>
+  <tr>
+    <td>/previous</td>
+    <td>Plays the previous track.</td>
+  </tr>
+  <tr>
+    <td>/queue</td>
+    <td>Displays the queue of tracks.</td>
+  </tr>
+  <tr>
+    <td>/restart</td>
+    <td>Restart the current track from the start.</td>
+  </tr>
+  <tr>
+    <td>/skip</td>
+    <td>Skips the current track.</td>
+  </tr>
+  <tr>
+    <td>/skipto (number)</td>
+    <td>Skips to the given track. You can check /queue for the number of the desired track.</td>
+  </tr>
+  <tr>
+    <td>/stop</td>
+    <td>Stops the player and clears the queue.</td>
+  </tr>
+</table>
+
+There are also many UI controls, that are attached to the messages of the bot.
