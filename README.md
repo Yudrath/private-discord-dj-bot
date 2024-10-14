@@ -8,9 +8,24 @@ The bot is meant to be used among friends in a private Discord server. As it rel
 
 # How to set up the bot
 
-*You might want to create an alt Discord account for the next steps, because they involve integrating Discord tokens into the code. If you don't consider sharing the build of the app with friends, this mustn't be an issue, otherwise bear in mind that the application can be reverse engineered and your tokens can be possibly used maliciously. Or you can create a separate text file on your machine to store and load the tokens from.* 
+*You might want to create an alt Discord account for the next steps, because they involve integrating Discord tokens into the code. If you don't consider sharing the build of the app with friends, this mustn't be an issue, otherwise, bear in mind that the application can be reverse engineered and your tokens can be possibly used maliciously (deleting your server, deleting the members, sharing something illegal on the server etc), but there are ways to mitigate or essentially eliminate the possible damage which are explained further.*
 
 **NEVER SHARE THE APPLICATION WITH PEOPLE YOU DON'T TRUST!**
 
-Steps to 
-* You need to create two applications, the first application will be 
+### Setting up the bot:
+If you plan on using a separate Discord account, you must create it and login into it now.
+
+1. Go to the [Discord Developer Portal](https://discord.com/developers/applications). There you must create 2 applications — the DJ application and the Helper application.
+2. For each application, go to Settings -> Bot, find Privileged Gateway Intents and enable all intents.
+3. In the same setting category (Bot), scroll a bit up and find the button "Reset token". Click it and copy the token. Now, go inside your IDE, where the project from this repository should be loaded, and find the classes DiscordBot and HelperBot, there you should paste each respective token in the constant variable BOT_TOKEN.
+4. The Helper bot should be able to run a check on the status of the DJ bot, so they must be on the same Discord server. You can create your own Discord server just for the bots to hide this process "behind the scenes" or you can use a server, where the DJ will operate. You **DON'T** need to add the Helper bot to every Discord server the DJ is part of, this is why I recommend a separate server for the bots only (and you as the creator, of course). Now, create a separate Discord server for the bots, if you wish. Otherwise, read on.
+5. It's time to invite the bots to a server. Let's first start with the Helper bot. Switch to the Helper bot application in the Discord Developer Portal, navigate to Settings -> OAuth2 and scroll down until you reach OAuth2 URL Generator. We have to create the bot's invite URL and set its permissions. From Scopes, mark the "bot" box, scroll to the bottom of the page and copy the generated URL. Place the generated URL inside the search bar of your browser, press Enter and add the Helper bot to a server, where you also plan to add the DJ bot.
+6. Next, we do the same with the DJ bot, but this time in Scopes choose bot and applications.commands, then scroll to the Bot Permissions panel and choose:
+   * View channels
+   * Send Messages
+   * Manage Messages
+   * Embed Links
+   * Read Message History
+   * Connect
+   * Speak
+   * Use Voice Activity
