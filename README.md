@@ -29,3 +29,7 @@ If you plan on using a separate Discord account, you must create it and login in
    * Connect
    * Speak
    * Use Voice Activity
+7. After the bots are added to a common Discord server, open the Discord app, go to your settings and enable Developer mode.
+8. Go to the Discord server where the bots are added, get the server's ID, open the project in your IDE and assign the copied ID to GUILD_ID in the HelperBot class. After pasting it, attach an "L" to the ID value (000000000**L**).
+9. Repeat step 8, this time copying the DJ bot's ID and assigning it to DJ_ID in the same class.
+10. You can finally build the project and use it.
