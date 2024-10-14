@@ -8,8 +8,9 @@ The bot is meant to be used among friends in a private Discord server. As it rel
 
 # How to set up the bot
 
-*You might want to create an alt Discord account for the next steps, because they involve integrating Discord tokens into the code. If you don't consider sharing the build of the app with friends, this mustn't be an issue, otherwise bear in mind that the application can be reverse engineered and your tokens can be possibly used maliciously.* 
+*You might want to create an alt Discord account for the next steps, because they involve integrating Discord tokens into the code. If you don't consider sharing the build of the app with friends, this mustn't be an issue, otherwise bear in mind that the application can be reverse engineered and your tokens can be possibly used maliciously. Or you can create a separate text file on your machine to store and load the tokens from.* 
 
 **NEVER SHARE THE APPLICATION WITH PEOPLE YOU DON'T TRUST!**
 
+Steps to 
 * You need to create two applications, the first application will be 
