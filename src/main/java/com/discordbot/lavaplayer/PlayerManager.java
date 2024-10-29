@@ -38,10 +38,10 @@ public class PlayerManager {
     private Map<Long, GuildMusicManager> guildMusicManagers = new HashMap<>();
     private AudioPlayerManager audioPlayerManager = new DefaultAudioPlayerManager();
 
-    private static final String SPOTIFY_CLIENT_ID = "a07e2479f08846b7be7cc56a1dbd7051";
-    private static final String SPOTIFY_CLIENT_SECRET = "df2c40c29b5f49c49a20fd3f32c5f9a1";
-    private static final String SPOTIFY_COUNTRY_CODE = "US";
-    private static final String SPOTIFY_SPDC = "AQBiGnV9D-9vkebDmvPTrxQ3ii7AWgeNiotrjQcbQewbLx9rKXWb70mPsXV5EihzDU2Y2oGaaJMlM8FEwQEYwZTwX9SaG7fdLnzdcYHSNob68-CNs5cKhDwzi1l-zlRVk9f4twkDVJLfx--imPpCU0eglI6kWQw";
+    private static final String SPOTIFY_CLIENT_ID = "";
+    private static final String SPOTIFY_CLIENT_SECRET = "";
+    private static final String SPOTIFY_COUNTRY_CODE = "";
+    private static final String SPOTIFY_SPDC = "";
 
 
     private PlayerManager() {
