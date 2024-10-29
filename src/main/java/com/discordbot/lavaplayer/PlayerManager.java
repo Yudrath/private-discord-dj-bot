@@ -1,7 +1,6 @@
 package com.discordbot.lavaplayer;
 
 import com.discordbot.ButtonManager;
-import com.discordbot.helpers.EmbedReplies;
 import com.discordbot.buttons.NextPage;
 import com.discordbot.buttons.PreviousPage;
 import com.discordbot.helpers.MyEmojis;
@@ -25,8 +24,6 @@ import net.dv8tion.jda.api.interactions.components.ActionRow;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
-import com.discordbot.ButtonManager.Platform;
 
 import static com.discordbot.helpers.EmbedReplies.*;
 import static com.discordbot.helpers.EventReplyHelper.*;
@@ -35,8 +32,8 @@ public class PlayerManager {
 
     private static final int SEARCH_QUERY_RESULT_LIMIT = 5;
     private static PlayerManager INSTANCE;
-    private Map<Long, GuildMusicManager> guildMusicManagers = new HashMap<>();
-    private AudioPlayerManager audioPlayerManager = new DefaultAudioPlayerManager();
+    private final Map<Long, GuildMusicManager> guildMusicManagers = new HashMap<>();
+    private final AudioPlayerManager audioPlayerManager = new DefaultAudioPlayerManager();
 
     private static final String SPOTIFY_CLIENT_ID = "";
     private static final String SPOTIFY_CLIENT_SECRET = "";
