@@ -40,6 +40,7 @@ public class PlayerManager {
     private static final String SPOTIFY_COUNTRY_CODE = "";
     private static final String SPOTIFY_SPDC = "";
 
+    private static final String OAUTH_TOKEN = "";
 
     private PlayerManager() {
         String[] providers = new String[4];
@@ -55,6 +56,9 @@ public class PlayerManager {
                 new DefaultMirroringAudioTrackResolver(providers));
 
         dev.lavalink.youtube.YoutubeAudioSourceManager ytSourceManager = new dev.lavalink.youtube.YoutubeAudioSourceManager();
+        ytSourceManager.useOauth2(null, false); //Use this to generate the token
+//        ytSourceManager.useOauth2(OAUTH_TOKEN, true); //After generating the token, you can use this and comment out the line above
+
         audioPlayerManager.registerSourceManager(ytSourceManager);
 
         audioPlayerManager.registerSourceManager(spotify);

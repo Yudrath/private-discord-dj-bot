@@ -10,8 +10,8 @@ import net.dv8tion.jda.api.utils.cache.CacheFlag;
 
 public class HelperBot {
     private static final String BOT_TOKEN = "";
-    private static final long GUILD_ID = 1234567890L;
-    private static final long DJ_ID = 1234567890L;
+    private static final long GUILD_ID = 123456789L;
+    private static final long DJ_ID = 123456789L;
 
     private static JDA bot;
 
