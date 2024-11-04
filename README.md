@@ -10,7 +10,7 @@ The bot is intended to be used among friends in a private Discord server. As it 
 
 *You might want to create an alt Discord account for the next steps, because they involve integrating Discord tokens into the code, and, if you share the build of the application with someone else, you potentially share the access to your bots. If you don't consider sharing the build of the app with friends, this mustn't be an issue, otherwise, bear in mind that the application can be reverse engineered and your tokens can possibly be used maliciously (deleting your server, deleting the members, sharing something illegal on the server etc), but we are going to set a limited amount of permissions for the bot to mitigate or essentially eliminate the possible damage that can theoretically be inflicted by a threat actor who discovered a way to extract the tokens.*
 
-**NEVER SHARE THE APPLICATION WITH PEOPLE YOU DON'T TRUST!**
+**DESPITE ALL OF THAT — NEVER SHARE THE APPLICATION WITH PEOPLE YOU DON'T TRUST!**
 
 ### Setting up the bot:
 If you plan on using a separate Discord account, you must create it and login into it now.
@@ -30,10 +30,11 @@ If you plan on using a separate Discord account, you must create it and login in
    * Speak
    * Use Voice Activity
 7. After the bots are added to a common Discord server, open the Discord app, go to your settings and enable Developer mode.
-8. Go to the Discord server where the bots are added, get the server's ID, open the project in your IDE and assign the copied ID to GUILD_ID in the HelperBot class. After pasting it, attach an "L" to the ID value (000000000**L**).
+8. Go to the Discord server where the bots are added, get the server's ID, open the project in your IDE and assign the copied ID to GUILD_ID in the HelperBot class. After pasting it, attach an "L" to the ID value (000000000**L**) to indicate that it's a **long** data type value.
 9. Repeat step 8, this time copying the DJ bot's ID and assigning it to DJ_ID in the same class.
 10. To integrate Spotify, go [here](https://github.com/topi314/LavaSrc?tab=readme-ov-file#spotify) and follow the instructions. All you have to do is assign the respective values to SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET and SPOTIFY_SPDC in the PlayerManager class. Assign SPOTIFY_COUNTRY_CODE whatever country ID you want (US, UK, AU etc).
-11. You can finally build the project and use it.
+11. To integrate YouTube, follow the guide [here](https://github.com/lavalink-devs/youtube-source?tab=readme-ov-file#using-oauth-tokens). In PlayerManager, there's a constant variable OAUTH_TOKEN which you should assign the token to.
+12. You can finally build the project and use it.
 
 # Commands
 <table>
