@@ -33,7 +33,8 @@ If you plan on using a separate Discord account, you must create it and login in
 8. Go to the Discord server where the bots are added, get the server's ID, open the project in your IDE and assign the copied ID to GUILD_ID in the HelperBot class. After pasting it, attach an "L" to the ID value (000000000**L**) to indicate that it's a **long** data type value.
 9. Repeat step 8, this time copying the DJ bot's ID and assigning it to DJ_ID in the same class.
 10. To integrate Spotify, go [here](https://github.com/topi314/LavaSrc?tab=readme-ov-file#spotify) and follow the instructions. All you have to do is assign the respective values to SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET and SPOTIFY_SPDC in the PlayerManager class. Assign SPOTIFY_COUNTRY_CODE whatever country ID you want (US, UK, AU etc).
-11. You can finally build the project and use it.
+11. To integrate YouTube, follow the guide [here](https://github.com/lavalink-devs/youtube-source?tab=readme-ov-file#using-oauth-tokens). In PlayerManager, there's a constant variable OAUTH_TOKEN which you should assign the token to.
+12. You can finally build the project and use it.
 
 # Commands
 <table>
